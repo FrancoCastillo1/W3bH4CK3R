@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia Secion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300&family=Anton&family=Lato:wght@100&family=Nunito+Sans:wght@200&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/27a566e2ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- <header class="soloParaElColor"></header> no se si poner el header o footer , ya que generalmente no los he visto para un inicio de secion.corrigeme si estoy equivocado--> 
+    <main class="mainContainer">
+     <section class="sectionInicia">
+        <div class="registrate">
+         <h2>¿Todavia no tienes cuenta?</h2>
+         <form action="../html/registrate.html">
+            <button>Registrate ya</button> 
+          </form>
+        </div>
+        <form class="formPrincipal">
+          <h1>Inicia Secion</h1>
+                  <label for="email">Email:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Inserte su email"
+                    class="inciaSecionInputNoButtom">
+                  <label for="password">Contraseña:</label>
+                  <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Inserte su contraseña"
+                  class="inciaSecionInputNoButtom">
+              <a href="#">¿Olvidaste tu contraseña?</a>
+               <div class="inciaSecionDivButton">
+                <input 
+                type="submit" 
+                value="Inciar Seción"
+                class="inciaSecionInputButton"
+                />
+               </div> 
+        </form>
+       </div>
+     </section>
+    </main>
+    <footer>
+        <div class="divLeft">
+          <h3>No te olvides de seguirnos en nuestras redes sociales:</h3>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/Landroverargentina/" target="_blank" id="footer__facebook"  class="footerRedes"
+                ><i class="fa-brands fa-facebook" ></i></a
+              >
+            </li>
+            <li>
+              <a href="https://www.instagram.com/landrover/?hl=es" target="_blank" id="footer__instagram" class="footerRedes"><i class="fa-brands fa-instagram" ></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/showcase/land-rover-global" target="_blank" id="footer__linkedin" class="footerRedes"
+                ><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="divRight">
+          <ul class="ulRight">
+            <li><a href="#">Politica y Privacidad</a></li>
+            <li><a href="#">Terminos&Condiciones</a></li> 
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+    </footer>
+</body>
+</html>

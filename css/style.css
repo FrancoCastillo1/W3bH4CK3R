@@ -1,0 +1,629 @@
+/*
+font-family: 'Anek Malayalam', sans-serif;
+font-family: 'Anton', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Roboto Slab', serif;
+*/
+/*estilos generales */
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Anek Malayalam', sans-serif;
+}
+body{
+    display:grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main "
+    "footer footer footer"
+    ; 
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}                  
+::-webkit-scrollbar-track{
+    background-color: rgb(2, 61, 2);
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(13,111,11);
+    background: linear-gradient(180deg, rgba(13,111,11,1) 19%, rgba(0,0,0,1) 62%);
+    border-radius: 5em;
+}
+/*main(solo color) */
+.mainMatrix{
+    grid-area: main;
+    background-image: url(../matrix-code.gif);
+}
+.mainBlack{
+    grid-area: main;
+    background-color: black;
+}
+                                    /*Header */
+header{
+    grid-area: header;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    border:3px solid rgb(10, 82, 10);
+}
+.logoPrincipal h2{
+    font-size:25px;
+    color:white;
+    padding-left:15px
+}
+nav ul ,
+.cuentaUsuario ul{
+    display: flex;
+    list-style: none;
+    font-size:25px;
+}
+nav ul{
+    margin-right:40px
+}
+nav ul li a{
+    text-decoration: none;
+    color:rgb(8, 117, 13);
+   margin-left: 35px;
+   transition:transform 2s , border-bottom 1.2s;
+}
+nav ul li a:hover{
+   border-bottom:1px solid white;
+   transition:border-bottom 0.4s ease-in;
+}
+.busquedaHeader i{
+    position: relative;
+    font-size: 20px ;
+    color:rgb(8, 117, 13);
+    margin-left:65px;
+}
+.busquedaHeader input{
+    position: absolute;
+    right:20px;
+   display: none; 
+    width:110px;
+    height:20px;
+    border:none;
+    outline: none;
+    border: 1px solid rgb(8, 117, 13);
+    transition: all 2.5s ease-out;
+}
+.busquedaHeader i:hover input{
+    display: inline-block;
+    background-color: rgb(51, 47, 47);
+    color:rgb(28, 94, 28);
+    border: 2px outset rgb(8, 117, 13); ;
+    height: 25px;
+    width: 155px;
+}
+.cuentaUsuario ul li{
+    background-color: rgb(8, 117, 13);
+    padding: 30px;
+}
+.cuentaUsuario ul li a:hover{
+    border-bottom: 1px solid white;
+}
+.cuentaUsuario ul li a{
+    text-decoration: none;
+    color:white
+}
+                                      /*Footer */
+footer{
+    grid-area: footer;
+    background-color: rgb(15, 15, 15);
+    color:rgb(8, 117, 13);
+    display: flex;
+    justify-content: space-between;
+}
+footer h3{
+    padding:10px
+}
+footer ul{
+    display:flex;
+    list-style: none;
+}
+footer ul li .footerRedes{
+    padding-left: 15px;
+    font-size: 1.2rem;
+}
+#footer__facebook{
+    color:rgb(0, 139, 185)
+}
+#footer__instagram{
+    color:rgb(211, 144, 20)
+}
+#footer__linkedin{
+    color:rgb(33, 206, 206)
+}
+footer .ulRight{
+    display: flex;
+    flex-direction: column;
+    padding:10px
+}
+footer .ulRight li{
+    padding: 10px;
+}
+footer .ulRight li a{
+    color:rgb(8, 117, 13);
+    padding:10px
+}                                    /*main  */
+
+                                     /*Contacto */
+
+.containerForm{
+    height:663px;
+    width: 30%;
+    margin:10px auto;
+    border-radius:10%;
+    border:3px solid rgb(10, 82, 10);
+     background-color: rgb(0, 0, 0); 
+}
+.formContacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:30%
+}
+.formContacto h2{
+    color:rgb(8, 117, 13);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size:2rem
+}
+.formContacto img{
+    width:45%;
+    height:60%;
+}
+.formFormulario{
+    height:70%;
+    width:100%
+}
+.formReal{
+    display: flex;
+    flex-direction: column;
+}
+.formReal div .contactoInputNoButtom{
+    width: 80%;
+    margin-left:20px;
+    height:40px;
+    border:none;
+    border-bottom:1px solid rgb(8, 117, 13);
+    background-color: rgb(29, 27, 27);
+    color:rgb(6, 75, 6);
+}
+.formReal div .contactoInputNoButtom:focus{
+    background-color: rgb(51, 47, 47);
+    /* border:1px solid rgb(8, 117, 13); */
+    outline:2px solid rgb(8, 117, 13);
+    color:rgb(28, 94, 28)
+}
+.formReal div label{
+    color:rgb(28, 94, 28);
+    width:100%;
+    font-size:1.3rem;
+    margin-left:20px
+}
+.formReal .contactoMensaje textarea{
+    resize: none;
+    width: 80%;
+    height:70px;
+    margin-left:20px;
+    border: none;
+    border-bottom: 1px solid rgb(8, 117, 13);
+    background-color:rgb(29, 27, 27);
+}
+.formReal .contactoMensaje textarea:focus{
+    outline: 2px solid rgb(8, 117, 13);
+    background-color: rgb(51, 47, 47);
+    color:rgb(28, 94, 28)
+}
+.formReal .contactoInputButtom{
+    display: flex;
+    justify-content: center;
+    margin-top:15px
+}
+.formReal .contactoInputButtom  input{
+    margin-left:10px;
+    background-color:rgb(8, 117, 13);
+    width:45%;
+    height:40px;
+    color:white;
+    border: none;
+    border: 1px solid rgb(8, 117, 13);;
+}
+.formReal .contactoInputTel{
+    margin-top:5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.formReal .contactoInputTel input{
+    width:40%;
+    margin-left:18px;
+    background-color:rgb(29, 27, 27);
+    border-bottom:1px solid rgb(8, 117, 13);
+    color:rgb(6, 75, 6)
+}
+.formReal .contactoInputTel input:focus{
+    background-color: rgb(51, 47, 47);
+    /* border:1px solid rgb(8, 117, 13); */
+    outline:2px solid rgb(8, 117, 13);
+    color:rgb(28, 94, 28);
+}
+.formReal .contactoInputTel select{
+    color:rgb(6, 75, 6);
+    width:40%;
+    margin-left:18px;
+    background-color:rgb(29, 27, 27);
+}
+.button-google{
+    width: 100px;
+    height: 100px;
+}
+                                   /*Index */
+/* .sectionPresentación{
+    width: 100%; 
+} */
+
+.sectionPresentación{
+    width: 100%;
+    height:300px;
+    position:relative;
+    overflow:hidden;
+}
+.sectionPresentación video{
+    width:100%
+}
+.sectionPresentación .seccionInteracción{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color:white;
+    width:100%;
+    height:100%
+}
+.sectionPresentación .seccionInteracción h2 , form {
+   z-index: 1;
+}
+.sectionPresentación .seccionInteracción h2{
+    color:rgb(28, 94, 28);
+    font-size:1.7rem;
+}             
+.sectionPresentación .seccionInteracción button{
+    font-size:1,25rem;
+    color:white;
+    background-color: green;
+    width: 100px;
+    cursor: pointer;
+    height:40px
+}
+.noticias{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap:20px;
+    margin:20px 5px;
+    grid-template-rows: 340px;
+}
+.noticias div{
+    background-color: rgb(29, 28, 28);
+    color:rgb(23, 119, 23);
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.noticias div img{
+    width: 100%;
+    height: 35%;
+}
+.noticias div h2{
+    width: 100%;
+    height: 8%;
+    font-size:1.6rem;
+    color:rgb(12, 65, 12);
+    /* line-height: ; */
+    margin-left:5px
+}
+.noticias div p{
+    width: 100%;
+    height: 40%;
+    font-size:1.2rem;
+    margin:5px
+}
+.noticias div .botonNoticias{
+    width: 100%;
+    height: 17%;
+}
+.noticias div form button{
+    background-color:rgb(23, 119, 23) ;
+    color:white;
+    width: 150px;
+    height:30px;
+    font-size:1.1rem;
+    cursor: pointer;
+}
+.noticiaKali{
+    background-image: url("../imagenes/Kali-Noticias.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height:200px;
+    margin-bottom:5px
+}
+.noticiaKali div{
+    width:50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.noticiaKali div h2{
+    color:rgb(255, 255, 255);
+    font-size:30px
+}
+.noticiaKali div button{
+    width:200px;
+    height:40px;
+    color:white;
+    background-color: rgb(36, 163, 163);
+    font-size:20px;
+    cursor: pointer;
+}
+                                 /*Preguntas Frecuentes */
+
+.containerPreguntas{
+    margin:10px auto;
+    background-color: rgb(31, 26, 26);
+    width:85%;
+    height:450px; 
+    border-radius: 4%;
+}
+.containerPreguntas h1{
+    text-align:center;
+    font-size: 60px;
+    color:green;
+}
+.containerPreguntas ul{
+    list-style:none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size:30px;
+    padding: 5px;
+}
+.containerPreguntas ul li a{
+    text-decoration: none;
+    color:green;
+    margin-left:15px
+}
+.containerPreguntas ul li:hover{
+    background-color: rgb(37, 36, 36);
+    border-radius: 8%;
+}
+.PreguntasFrecuentes h2 ,p{
+   margin:15px;
+   color:green
+}
+                          /*Incia Sesión */
+/* .soloParaElColor{
+    background-color: rgb(43, 42, 42);;
+} */
+.mainContainer{
+    width:100vw;
+    height: 90vh;
+    background-color: #27540a;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%230c0c0c' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionInicia{
+    margin: 0 auto;
+    display:flex;
+    height:300px;
+    width:75%
+}
+.registrate{
+    background-color: white;
+    align-self: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:60%;
+    height: 200px;
+}
+.registrate h2{
+    color:green;
+    font-size: 30px;
+}
+.registrate form button{
+    background-color: green;
+    color:white;
+    height:30px;
+}
+.formPrincipal{
+    height: 100%;
+    border-radius: 8%;
+    border:3px solid rgb(26, 146, 10);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin-left:10%;
+}
+.formPrincipal h1{
+    font-size:30px;
+    text-align: center;
+    color:green;
+    margin:5px;
+}
+.formPrincipal  label{
+    align-self: flex-start;
+    font-size: 1.2rem;
+    margin-left:25px;
+    color:green
+}
+.formPrincipal .inciaSecionInputNoButtom {
+    width: 85%;
+    margin-left:5px;
+    height:30px;
+    border:none;
+    outline: none;
+    border-bottom:1px solid green;
+}
+.inciaSecionInputNoButtom:focus{
+    color:rgb(30, 87, 30);
+    border:1px solid green
+}
+.formPrincipal a{
+    margin-top:15px;
+}
+.formPrincipal .inciaSecionDivButton{
+    width: 100%;
+    display: flex;
+    justify-items: flex-end;
+    align-items: flex-end;
+    height: 40%;
+}
+.inciaSecionInputButton{
+    height: 30px;
+    margin:15px;
+    font-size:15px;
+    width:100px;
+    color:white;
+    background-color: green;
+}
+
+                                   /*Registrate */
+.sectionRegistrate{
+    padding: 10px;
+    width: 35%;
+    height: 460px;
+    background-color: rgb(241, 236, 236);
+    border-radius: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sectionRegistrate .divTop h2{
+    font-size: 1.5rem;
+    color:rgb(28, 94, 28);
+    text-align: center;
+}
+.formRes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.formRes .inputNormal{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(28, 94, 28);
+    height: 30px;
+    width: 85%;
+    transition: all 1.5s ease-in;
+}
+.formRes label i{
+    color:rgb(39, 38, 38);
+    font-size: 1.1rem;
+}
+.formRes label{
+    animation: llegar 3s 1 ; 
+    margin-top:10px;
+   font-size:1.2rem;
+   color:green;
+}
+.formRes .inputNormal:focus{
+    color:rgb(85, 163, 91) ;
+    border:3px inset rgb(28, 94, 28);
+}
+.formRes  .registrateInputButton{
+    background-color: #377c08;
+    margin-top:17px;
+    justify-self: center;
+    height: 30px;
+    width: 160px;
+    color:white
+}
+.formGoogle{
+    display: flex;
+    align-items: center;
+}
+ .formGoogle button img{
+    width: 30px;
+    height: fit-content
+} 
+.formGoogle button{
+    display: flex;
+    background-color: #fff;
+    padding-right: 10px;
+} 
+                                    /*servicios */
+.mainServicios{
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23135400' fill-opacity='0.52'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.nuestrosServicios{
+    margin: 30px 0px;
+    display: grid;
+    width: 99.2vw;
+    justify-items: center;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    grid-template-rows: repeat(3,350px);
+}
+.nuestrosServicios div{
+    margin-bottom: 30px;
+    width: 400px;
+    height: 100%;
+    background-color: black;
+    border: 2px solid rgb(23, 119, 23);
+    border-radius: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nuestrosServicios div img{
+    width: 150px;
+    border-radius:50% ;
+}
+.nuestrosServicios div h2{
+    font-size: 1.5rem;
+    color:rgb(23, 119, 23);
+    padding: 20px;
+    transition: transform 0.5s;
+}
+.nuestrosServicios div:hover{
+    transform: scale(1.1);
+}
+.nuestrosServicios div p{
+    font-size: 1.2rem;
+    color:rgb(23, 119, 23);
+    padding: 20px;
+}
+
+                                    /*animaciones */
+@keyframes llegar {
+    0%{
+        transform:translateX(-100%);
+        opacity: 0.2;
+    }
+    100%{
+        transform: translateX(0%);  /*es el punto original donde estaba antes :0 */
+        opacity: 1;
+    }
+}

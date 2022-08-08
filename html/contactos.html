@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300&family=Anton&family=Lato:wght@100&family=Nunito+Sans:wght@200&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/27a566e2ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logoPrincipal">
+    <h2>Anoynimous</h2>
+   </div>
+    <nav>
+        <ul>
+            <li> <a href="../index.html">Inicio</a></li>
+            <li> <a href="servicios.html">Servicios</a></li>
+            <li> <a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+            <li> <a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="busquedaHeader">
+         <i class="fa-solid fa-magnifying-glass">
+           <input type="search" name="busqueda" id="headerBuscar">
+         </i>
+        </div>
+           <div class="cuentaUsuario">
+            <ul>
+            <li> <a href="iniciaSesion.html" target="_blank">Inicia Seción</a></li>
+            </ul>
+    </div>
+</header>
+    <main class="mainMatrix">
+        <section class="seccion-formualrio">
+            <div class="containerForm">
+                <div class="formContacto">
+                    <h2>Contactate</h2>
+                    <img src="../imagenes/anoynimous-form-2.jpg" alt="cabeza-anoynimous">
+                </div>
+                <div class="formFormulario">
+                    <form class="formReal">
+                        <div>
+                            <label for="Nombre">Nombre:</label>
+                            <input
+                              type="text"
+                              name="nombre"
+                              id="nombre"
+                              placeholder="Inserte su nombre aqui"
+                            class="contactoInputNoButtom"  
+                            />
+                          </div>
+                          <div>
+                            <label for="Apellido">Apellido:</label>
+                            <input
+                              type="text"
+                              name="Apellido"
+                              id="apellido"
+                              placeholder="Inserte su apellido aqui"
+                              class="contactoInputNoButtom"
+                            />
+                          </div>
+                          <div class="contactoInputTel">
+                             <label for="telefono">Numero telefonico</label>
+                              <select class="numeroSeleccion" name="country_selector" id="country_select" required="1">
+                                  <option value="AF">Afganistán (+93)</option>
+                                  <option value="AL">Albania (+355)</option>
+                                  <option value="DE">Alemania (+49)</option>
+                                  <option value="AD">Andorra (+376)</option>
+                                  <option value="AO">Angola (+244)</option>
+                                  <option value="AI">Anguila (+1)</option>
+                                  <option value="AG">Antigua (+1)</option>
+                                  <option value="SA">Arabia Saudí (+966)</option>
+                                  <option value="DZ">Argelia (+213)</option>
+                                  <option value="AR" selected="1">Argentina (+54)</option>
+                              </select> 
+                             <input
+                              type="tel"
+                              name="telefono"
+                              id="telefono"
+                              placeholder="Inserte numero telefonico"
+                              class="contactoInputNoButtomTel" 
+                              />
+                          </div>
+                          <div>
+                            <label for="email">Email:</label>
+                            <input
+                              type="email"
+                              name="email"
+                              id="email"
+                              placeholder="Inserte su email aqui"
+                              class="contactoInputNoButtom"
+                            />
+                          </div>
+                          <div class="contactoMensaje" >
+                            <label for="mensaje">Dejanos su mensaje</label>
+                            <textarea ></textarea>
+                          </div>
+                          <div class="contactoInputButtom">
+                            <input type="reset"  value="Resetear datos" />
+                            <input type="submit"  value="Enviar Datos" />
+                          </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="divLeft">
+          <h3>No te olvides de seguirnos en nuestras redes sociales:</h3>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/Landroverargentina/" target="_blank" id="footer__facebook"  class="footerRedes"
+                ><i class="fa-brands fa-facebook" ></i></a
+              >
+            </li>
+            <li>
+              <a href="https://www.instagram.com/landrover/?hl=es" target="_blank" id="footer__instagram" class="footerRedes"><i class="fa-brands fa-instagram" ></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/showcase/land-rover-global" target="_blank" id="footer__linkedin" class="footerRedes"
+                ><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="divRight">
+          <ul class="ulRight">
+            <li><a href="#">Politica y Privacidad</a></li>
+            <li><a href="#">Terminos&Condiciones</a></li> 
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+    </footer>
+</body>
+</html>
